@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<body>
+    <marquee behavior="loop" direction="left">Welcome to Climyx! Your go-to source for real-time weather updates, forecasts, and climate insights. 🌦️</marquee>
+    <div class="container">
+        <center><u><h1>Climyx</h1></u>
+            <p>Select timezone:- <form id="Timezone" >
+                <i>
+                    <label for="GMT">
+ <input  type="radio" value="GMT" name="zones" id="GMT">GMT
+</label>
+<label for="IST">
+ <input  type="radio" value="IST" name="zones" id="IST">IST
+</i>
+</label>
+</center>
+
+<center>
+            </p>
+
+            </form>
+
+             
+        <form id="weather-form">
+          <input type="text" id="city" placeholder="Enter City" required>
+          <button type="submit">Get Weather</button>
+        </form>
+        <div id="weather-info">
+          <p id="temperature"></p>
+          <p id="condition"></p>
+          <p id="city-name"></p>
+        </div>
+      </div>
+      <div clas="Timezone">
+        <left>
+Do the following checks before proceeding <br>
+<span><ul>
+<label for ="location">
+<li><input type="checkbox"value=1 id="location">Location Access</li>
+<label for ="internet">
+    <li><input type="checkbox"value=2 id="internet">Internet Connection</li>
+</ul>
+</label>
+</left>
+</span>
+      </div>
+    </center>
+</body>
+</html>
