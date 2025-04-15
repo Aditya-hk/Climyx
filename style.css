@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("https://i.ibb.co/ccHPX8dh/a.jpg");
+    font-family: sans-serif;
+    background-image: url(/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,12 +11,19 @@ p {
 }
 
 h1 {
+    text: spacing 2px; ;
     color: black;
     /* For text decoration examples, refer to MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration */
     text-decoration: underline;
+    text-shadow: 2px 2px 5px gray;
+
+    
+      
+      
 }
 
 .container {
+    
     text-align: center;
     margin-top: 50px;
     padding: 20px;
@@ -26,7 +33,7 @@ h1 {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-  
+    
 }
 
 .Timezone {
@@ -34,6 +41,47 @@ h1 {
     text-align: left;
 }
 
-span {
+.span {
     color: black; /* Changed from auto to black or your preferred color */
+}
+.logo
+{
+    height:auto;
+    width:auto;
+    opacity: 1;
+    animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Style for the button */
+button {
+    background-color:rgb(7, 68, 160); /* Blue background */
+    color: white;           /* White text */
+    border: none;           /* No border */
+    padding: 10px 20px;     /* Some padding around the text */
+    font-size: 16px;        /* Font size */
+    cursor: pointer;       /* Change cursor to pointer when hovered */
+    border-radius: 5px;     /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+
+button:hover {
+    background-color: darkblue; /* Darker blue when hovered */
+}
+.blackline
+{
+  
+    
+        border: 0;
+        border-top: 1.5px solid black;  /* Creates a black line */
+        margin: 20px 0;  /* Adds some space around the line */
+    
+    
 }
