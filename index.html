@@ -9,7 +9,8 @@
 <body>
     <marquee behavior="loop" direction="left">Welcome to Climyx! Your go-to source for real-time weather updates, forecasts, and climate insights. 🌦️</marquee>
     <div class="container">
-        <center><u><h1>Climyx</h1></u>
+
+        <div class="logo"> <img src="/climyx-text.png" height="100"><center><u></u></img>  </div>
             <p>Select unit:- <form id="unit" >
                 <i>
                     <label for="celsius">
@@ -29,7 +30,8 @@
              
         <form id="weather-form">
           <input type="text" id="city" placeholder="Enter City" required>
-          <button type="submit">Get Weather!</button>
+          <hr class="blackline">
+          <div clas="but"><button type="submit">Get Weather!</button></div>
         </form>
         <div id="weather-info">
           <p id="temperature"></p>
